@@ -2,14 +2,14 @@
 
 ## Regras
 
- - [ ] O input de adicionar repositório deve receber a informação da
+ - [x] O input de adicionar repositório deve receber a informação da
        seguinte forma: organização/repositório (Exemplo:
        “rocketseat/comunidade”);
- - [ ] Ao clicar no botão “+” uma request será enviada à API do Github
+ - [x] Ao clicar no botão “+” uma request será enviada à API do Github
        buscando informações do repositório e armazenando os campos ID,
        nome, organização e avatar no storage (AsyncStorage) do
        dispositivo;
- - [ ] A lista de repositórios adicionada deve ser mantida no
+ - [x] A lista de repositórios adicionada deve ser mantida no
        AsyncStorage em forma de array e recuperada ao inicializar a
        aplicação exibindo os dados em tela;
  - [ ] O usuário deve poder atualizar a lista de repositórios arrastando

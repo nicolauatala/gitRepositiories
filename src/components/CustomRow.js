@@ -1,20 +1,21 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
-
-
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
 const CustomRow = ({ title, description, image_url }) => (
     <View style={styles.container}>
-        <Image source={{ uri: image_url }} style={styles.photo} />
-        <View style={styles.container_text}>
-            <Text style={styles.title}>
-                {title}
-            </Text>
-            <Text numberOfLines={ 1 } style={styles.description}>
-                {description}
-            </Text>
-        </View>
-
+        <TouchableOpacity 
+            onPress={() => this.onClickItem(title, description)}
+            style={styles.touchable}>
+            <Image source={{ uri: image_url }} style={styles.photo} />
+            <View style={styles.container_text}>
+                <Text style={styles.title}>
+                    {title}
+                </Text>
+                <Text numberOfLines={ 1 } style={styles.description}>
+                    {description}
+                </Text>
+            </View>
+        </TouchableOpacity> 
     </View>
 );
 
@@ -40,6 +41,12 @@ const styles = StyleSheet.create({
             height: 2
         }
     },
+
+    touchable: {
+        flex: 1,
+        flexDirection: 'row'
+    },
+
     title: {
         fontSize: 16,
         fontWeight: 'bold',

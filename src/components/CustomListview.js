@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, ListView, FlatList, StyleSheet, Text } from 'react-native';
+import { View, ListView, FlatList, StyleSheet, Text, Platform } from 'react-native';
 import CustomRow from './CustomRow';
 
 const styles = StyleSheet.create({

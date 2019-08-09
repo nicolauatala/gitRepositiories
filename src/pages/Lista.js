@@ -43,26 +43,36 @@ export default class Lista extends React.Component {
             }
         }
 
+        onClickItem = (owner, name) => {
+            this.props.navigation.navigate('Issues', {owner: owner, name: name});
+        }
+
         const searchRepository = async () => {
-            const response = await api.get(`/repos/${this.state.searchInput}`);
-            if (response.data) {
-                const { id, name, owner } = response.data;
-                const newelement = {
-                    id: id,
-                    title: name,
-                    description: owner.login,
-                    image_url: owner.avatar_url
+            
+            try {
+                const response = await api.get(`/repos/${this.state.searchInput}`);
+                if (response) {
+                    const { id, name, owner } = response.data;
+                    const newelement = {
+                        id: id,
+                        title: name,
+                        description: owner.login,
+                        image_url: owner.avatar_url
+                    }
+                    this.setState(prevState => ({
+                        repositories: [...prevState.repositories, newelement]
+                    }));
+                    saveRepository(newelement);
+                    this.setState({searchInput : ''});
                 }
-                this.setState(prevState => ({
-                    repositories: [...prevState.repositories, newelement]
-                }));
-                saveRepository(newelement);
-                this.setState({searchInput : ''});
+            } catch (error) {
+                console.log('error', error);
             }
         }
 
         return (
             <SafeAreaView style={styles.container}>
+
                 <View style={styles.searchContainer}>
                     <TextInput 
                         autoCapitalize="none"
@@ -81,9 +91,12 @@ export default class Lista extends React.Component {
                 {
                     this.state.repositories.length === 0 ?
                         <EmptyList />
-                    :  <CustomListview itemList={this.state.repositories} />
+                    :  <CustomListview 
+                        onPress={this.handleOnPress}
+                        itemList={this.state.repositories} />
                 }
             </SafeAreaView>
+            
         );
     }
 }
