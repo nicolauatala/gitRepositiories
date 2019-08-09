@@ -1,0 +1,31 @@
+dependencies: \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/node_modules/react-native/React/Base/RCTJavaScriptLoader.mm \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Target\ Support\ Files/React-Core/React-Core-prefix.pch \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/React-Core/React/RCTDefines.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Public/React-cxxreact/cxxreact/JSBundleType.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Folly/folly/Portability.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Folly/folly/portability/Config.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Folly/folly/CPortability.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/React-Core/React/RCTBridgeDelegate.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/React-Core/React/RCTJavaScriptLoader.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/React-Core/React/RCTBridgeModule.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/React-Core/React/RCTFrameUpdate.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/React-Core/React/RCTInvalidating.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/React-Core/React/RCTAnimationType.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/React-Core/React/RCTBorderStyle.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/React-Core/React/RCTLog.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/React-Core/React/RCTAssert.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/React-Core/React/RCTUtils.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/React-Core/React/RCTPointerEvents.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/React-Core/React/RCTTextDecorationLineType.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/yoga/Yoga.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/yoga/YGEnums.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/yoga/YGMacros.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/yoga/YGValue.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/node_modules/react-native/React/Base/RCTMultipartDataTask.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/Pods/Headers/Private/React-Core/React/RCTMultipartStreamReader.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/node_modules/react-native/React/Base/RCTPerformanceLogger.h \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/node_modules/react-native/React/Base/RCTUtils.h

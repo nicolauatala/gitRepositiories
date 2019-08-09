@@ -1,0 +1,3 @@
+dependencies: \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/gitRepositiories/main.m \
+  /Users/nicolauatala/React-Native-Projects/gitRepositiories/ios/gitRepositiories/AppDelegate.h
