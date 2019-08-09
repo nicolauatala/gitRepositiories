@@ -53,12 +53,15 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     description: {
-        fontSize: 12,
+        fontSize: 14,
+        color: '#999',
+        marginTop: 4
     },
     photo: {
         marginTop: 5,
         marginLeft: 10,
         height: 55,
         width: 55,
+        borderRadius: 28
     },
 });
