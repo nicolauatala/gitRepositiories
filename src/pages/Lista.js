@@ -11,7 +11,6 @@ export default class Lista extends React.Component {
         super(props);
         this.state = {
             searchInput: '',
-            repositoriesAdded: [],
             repositories: []
         };
     }
@@ -20,18 +19,36 @@ export default class Lista extends React.Component {
         title: 'GitIssues',
     };
 
-    componentDidMount() {
-        console.log('componentDidMount');
-        // AsyncStorage.getItem('repositories').then(repositories => {
+    async componentDidMount() {
+        // await AsyncStorage.clear();
+        const repos = await AsyncStorage.getItem('@Store:repositories');
+        if (repos) {
+            this.setState({repositories: JSON.parse(repos)})
+        }
     }
 
     render() {
 
+        const saveRepository = async (repository) => {
+            
+            try {
+                AsyncStorage.getItem('@Store:repositories')
+                    .then((repositories) => {
+                        const newRepositories = repositories ? JSON.parse(repositories) : [];
+                        newRepositories.push(repository);
+                    AsyncStorage.setItem('@Store:repositories', JSON.stringify(newRepositories));
+                });    
+            } catch (error) {
+                console.log('error', error);
+            }
+        }
+
         const searchRepository = async () => {
             const response = await api.get(`/repos/${this.state.searchInput}`);
             if (response.data) {
-                const { name, owner } = response.data;
+                const { id, name, owner } = response.data;
                 const newelement = {
+                    id: id,
                     title: name,
                     description: owner.login,
                     image_url: owner.avatar_url
@@ -39,6 +56,7 @@ export default class Lista extends React.Component {
                 this.setState(prevState => ({
                     repositories: [...prevState.repositories, newelement]
                 }));
+                saveRepository(newelement);
                 this.setState({searchInput : ''});
             }
         }
