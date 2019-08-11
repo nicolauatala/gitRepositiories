@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { SafeAreaView, View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
+import { SafeAreaView, View, Text, TextInput, StyleSheet, TouchableOpacity, Linking } from 'react-native';
 
 import EmptyList from '../components/EmptyList';
 
@@ -11,7 +11,9 @@ export default class Lista extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            issues: []
+            issues: [],
+            filterList: [],
+            filter: false
         };
     }
 
@@ -35,7 +37,7 @@ export default class Lista extends React.Component {
         console.log('name', name);
 
         try {
-            const response = await api.get(`/repos/${owner}/${name}/issues`);
+            const response = await api.get(`/repos/${owner}/${name}/issues?per_page=100&state=all`);
             if (response) {
                 console.log('response.data', response.data);
                 this.setState({issues: response.data});
@@ -46,6 +48,11 @@ export default class Lista extends React.Component {
     }
 
     render() {
+
+        onClickItem = (title, description, issue) => {
+            console.log('clicked issue', issue);
+            Linking.openURL(issue.html_url).catch((err) => console.error('An error occurred', err));
+        }
 
         return (
             <SafeAreaView style={styles.container}>
@@ -70,7 +77,7 @@ export default class Lista extends React.Component {
                             title={'0'}
                             description={'Issues here'} />
                     :  <CustomListview 
-                        itemList={this.state.issues} />
+                        itemList={this.state.filter ? this.state.filterList : this.state.issues} />
                 }
             </SafeAreaView>
         )

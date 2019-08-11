@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
-const CustomRow = ({ title, description, image_url }) => (
+const CustomRow = ({ title, description, image_url, issue }) => (
     <View style={styles.container}>
         <TouchableOpacity 
-            onPress={() => this.onClickItem(title, description)}
+            onPress={() => this.onClickItem(title, description, issue)}
             style={styles.touchable}>
             <Image source={{ uri: image_url }} style={styles.photo} />
             <View style={styles.container_text}>
@@ -14,6 +14,11 @@ const CustomRow = ({ title, description, image_url }) => (
                 <Text numberOfLines={ 1 } style={styles.description}>
                     {description}
                 </Text>
+                {
+                    issue.state && (
+                        <Text style={styles.state}>{issue.state}</Text>
+                    )
+                }
             </View>
         </TouchableOpacity> 
     </View>
@@ -71,4 +76,9 @@ const styles = StyleSheet.create({
         width: 55,
         borderRadius: 28
     },
+
+    state: {
+        fontSize: 12,
+        color: '#aaa'
+    }
 });

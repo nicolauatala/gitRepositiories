@@ -18,6 +18,7 @@ const CustomListview = ({ itemList }) => (
                 title={item.title}
                 description={item.description || item.user.login}
                 image_url={item.image_url || item.user.avatar_url}
+                issue={item}
             />}
         />
 

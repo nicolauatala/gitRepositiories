@@ -28,7 +28,7 @@
               não quebrando e mostrando “...” ([https://facebook.github.io/react-native/docs/text#ellipsizemode](https://facebook.github.io/react-native/docs/text#ellipsizemode))
        no final do texto para indicar que possui mais conteúdo;
        
- - [ ] Ao clicar em uma issue, o usuário deve ser redirecionado para a
+ - [x] Ao clicar em uma issue, o usuário deve ser redirecionado para a
        URL da issue pelo navegador
               ([https://facebook.github.io/react-native/docs/linking#openurl](https://facebook.github.io/react-native/docs/linking#openurl)),
               não é preciso abrir a informação na tela do app;
