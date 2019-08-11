@@ -5,6 +5,39 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>85AE0E9E-3BF1-4427-8256-4528CE506768</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>85AE0E9E-3BF1-4427-8256-4528CE506768.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>gitRepositiories project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>gitRepositiories</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace gitRepositiories with scheme gitRepositiories and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>587244378.42036605</real>
+			<key>timeStoppedRecording</key>
+			<real>587244379.49967206</real>
+			<key>title</key>
+			<string>Building workspace gitRepositiories with scheme gitRepositiories and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>85AE0E9E-3BF1-4427-8256-4528CE506768</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

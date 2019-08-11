@@ -16,8 +16,8 @@ const CustomListview = ({ itemList }) => (
             keyExtractor = { (item, index) => index.toString() }
             renderItem={({ item }) => <CustomRow
                 title={item.title}
-                description={item.description}
-                image_url={item.image_url}
+                description={item.description || item.user.login}
+                image_url={item.image_url || item.user.avatar_url}
             />}
         />
 

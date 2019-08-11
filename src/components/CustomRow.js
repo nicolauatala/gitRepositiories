@@ -8,7 +8,7 @@ const CustomRow = ({ title, description, image_url }) => (
             style={styles.touchable}>
             <Image source={{ uri: image_url }} style={styles.photo} />
             <View style={styles.container_text}>
-                <Text style={styles.title}>
+                <Text numberOfLines={1} style={styles.title}>
                     {title}
                 </Text>
                 <Text numberOfLines={ 1 } style={styles.description}>

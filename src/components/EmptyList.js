@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function functionEmptyList() {
+const functionEmptyList = ({title, description}) => {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.plus}>+</Text>
-            <Text style={styles.descriptionText}>No repository added : (</Text>
+            <Text style={styles.plus}>{title}</Text>
+            <Text style={styles.descriptionText}>{description}</Text>
         </View>
     );
 }
@@ -29,4 +29,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         color: '#999'
     }
-})
+});
+
+export default functionEmptyList;
+

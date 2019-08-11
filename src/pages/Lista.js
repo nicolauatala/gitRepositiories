@@ -43,8 +43,8 @@ export default class Lista extends React.Component {
             }
         }
 
-        onClickItem = (owner, name) => {
-            this.props.navigation.navigate('Issues', {owner: owner, name: name});
+        onClickItem = (title, description) => {
+            this.props.navigation.navigate('Issues', {owner: description, name: title});
         }
 
         const searchRepository = async () => {
@@ -90,7 +90,9 @@ export default class Lista extends React.Component {
                 
                 {
                     this.state.repositories.length === 0 ?
-                        <EmptyList />
+                        <EmptyList 
+                            title={'+'}
+                            description={'No repository added :/'}/>
                     :  <CustomListview 
                         onPress={this.handleOnPress}
                         itemList={this.state.repositories} />
