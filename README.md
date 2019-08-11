@@ -14,7 +14,7 @@
        aplicação exibindo os dados em tela;
  - [ ] O usuário deve poder atualizar a lista de repositórios arrastando
        a lista pra baixo com a opção refresh do  `<FlatList />`;
- - [ ] Ao clicar em um repositório, o usuário deverá ser navegado para a
+ - [x] Ao clicar em um repositório, o usuário deverá ser navegado para a
        tela de issues do repositório e só nesse momento carregar as
        issues da API (não armazene as issues no AsyncStorage). Você vai
        precisar enviar o repositório como parâmetro na navegação, veja: 
@@ -23,7 +23,7 @@
  - [ ] Deve ser possível filtrar entre issues abertas, fechadas e todas
        (por padrão);
 	
- - [ ] A linha do título da issue deve ocupar apenas a linha
+ - [x] A linha do título da issue deve ocupar apenas a linha
        ([https://facebook.github.io/react-native/docs/text#numberoflines](https://facebook.github.io/react-native/docs/text#numberoflines)),
               não quebrando e mostrando “...” ([https://facebook.github.io/react-native/docs/text#ellipsizemode](https://facebook.github.io/react-native/docs/text#ellipsizemode))
        no final do texto para indicar que possui mais conteúdo;
@@ -32,7 +32,7 @@
        URL da issue pelo navegador
               ([https://facebook.github.io/react-native/docs/linking#openurl](https://facebook.github.io/react-native/docs/linking#openurl)),
               não é preciso abrir a informação na tela do app;
- - [ ] As abas de status das issues não precisam utilizar React
+ - [x] As abas de status das issues não precisam utilizar React
        Navigation, você pode fazer apenas com botões 
        `<TouchableOpacity>`;
 	
