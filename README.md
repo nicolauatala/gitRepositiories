@@ -36,7 +36,7 @@
        Navigation, você pode fazer apenas com botões 
        `<TouchableOpacity>`;
 	
- - [ ] O app devera possuir testes unitários para garantir a qualidade
+ - [x] O app devera possuir testes unitários para garantir a qualidade
        do código.
 
 ## [](https://github.com/fabriciopedreira/desafio-react-native#exemplos-url)Exemplos URL
