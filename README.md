@@ -20,7 +20,7 @@
        precisar enviar o repositório como parâmetro na navegação, veja: 
        [https://reactnavigation.org/docs/en/params.html](https://reactnavigation.org/docs/en/params.html);
        
- - [ ] Deve ser possível filtrar entre issues abertas, fechadas e todas
+ - [x] Deve ser possível filtrar entre issues abertas, fechadas e todas
        (por padrão);
 	
  - [x] A linha do título da issue deve ocupar apenas a linha
